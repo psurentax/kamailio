@@ -66,6 +66,7 @@ int pv_parse_msrp_name(pv_spec_t *sp, str *in)
 			else if(strncmp(in->s, "conid", 5)==0)
 				sp->pvp.pvn.u.isname.name.n = 21;
 			else goto error;
+		break;
 		case 6:
 			if(strncmp(in->s, "method", 6)==0)
 				sp->pvp.pvn.u.isname.name.n = 6;
